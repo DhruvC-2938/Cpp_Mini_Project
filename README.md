@@ -1,85 +1,128 @@
-Hotel Booking System (C++)
-A console-based Hotel Management System built in C++ that automates room reservations, guest checkouts, and occupancy tracking with automated billing calculations.
-+2
+🏨 Hotel Booking System (C++)
+📌 Project Description
 
-🏨 Project Overview
-Managing room bookings manually can be time-consuming and prone to human errors, such as double bookings or incorrect billing. This project simplifies hotel operations by providing an interactive interface to manage room availability, calculate taxes, and track occupied rooms in real-time.
-+3
+The Hotel Booking System is a menu-driven, console-based C++ application that simulates basic hotel room management operations.
+It allows users to book rooms, calculate bills with tax, checkout guests, and view occupied rooms.
 
-🚀 Features
+The project demonstrates practical usage of Object-Oriented Programming (OOP) concepts in C++ and is suitable for academic mini-projects.
 
-Room Booking System: Supports three categories—Single (Rs.1500), Double (Rs.2000), and Deluxe (Rs.4000).
+🎯 Key Features
 
+Multiple room categories:
 
-Automated Billing: Automatically generates a professional bill including a 10% tax calculation.
+Single
 
+Double
 
-Real-time Availability: Dynamically updates room inventory as guests book or check out.
-+1
+Deluxe
 
+Room availability tracking
 
-Occupancy Tracking: View a summary of all currently occupied rooms and the duration of stays.
-+1
+Room booking with:
 
+Number of rooms
 
-Input Validation: Built-in checks to prevent invalid selections, overbooking, or invalid stay durations.
-+1
+Number of nights
 
-🛠️ Technical Highlights
+Automatic bill calculation with 10% tax
 
-Object-Oriented Programming (OOP): All operations are encapsulated within a single Hotel class.
-+1
+Guest checkout functionality
 
+View currently occupied rooms
 
-Data Structure: Utilizes parallel arrays to manage room types, pricing, and availability states.
-+1
+Simple and interactive menu system
 
+🛠️ Technologies Used
 
-Menu-Driven Interface: Uses a do-while loop and switch statements for a seamless user experience.
-+1
+Programming Language: C++
 
-📋 How to Use
-Book Room: Select a room type, enter the quantity of rooms, and specify the number of nights. The system will display a Grand Total.
-+1
+Core Concepts Applied:
 
-Guest Checkout: Select the room type to check out. The system will update the availability for future guests.
+Classes and Objects
 
+Encapsulation (private data members)
 
-Show Occupied: Quickly view which rooms are currently taken and for how many nights.
-+1
+Abstraction (public methods)
 
-Exit: Close the application. Note: As the current version does not use file handling, data is maintained only during program execution.
-+1
+Arrays
 
-💻 Installation
-Ensure you have a C++ compiler installed (e.g., GCC, Clang, or MSVC).
+Loops and conditional statements
 
-Download main.cpp.
+Platform: Console / Terminal
 
-Compile the code:
+🧩 Program Structure
+Hotel_Booking_System/
+│
+├── Hotel_Room_Booking.cpp
+└── README.md
+🧠 OOP Concepts Explained
 
-Bash
-g++ main.cpp -o HotelSystem
+Class (Hotel)
+Represents the hotel and manages room details, pricing, and availability.
+
+Object (h)
+An instance of the Hotel class used to access booking and checkout operations.
+
+Encapsulation
+Room data (price, availability, occupied rooms) is kept private and accessed only through class methods.
+
+Abstraction
+Users interact with the system via menu options without knowing internal data handling.
+
+▶️ How to Compile and Run
+
+Clone the repository:
+
+git clone https://github.com/your-username/hotel-booking-system.git
+
+Navigate to the project directory:
+
+cd hotel-booking-system
+
+Compile the program:
+
+g++ Hotel_Room_Booking.cpp -o hotel
+
 Run the executable:
 
-Bash
-./HotelSystem
-👥 Contributors
+./hotel
+📸 Sample Menu Output
+====================================
+===== Hotel Booking System =====
+1. Book Room
+2. Guest Checkout
+3. Show Occupied Rooms
+4. Exit
+====================================
+Enter choice:
+🧾 Billing Logic
 
-Group No: 7 
+Subtotal = Room Price × Number of Rooms × Number of Nights
 
+Tax = 10% of Subtotal
 
-Presented By: Pranav Nair, Mahek Yadav, Pratik Swain, Dhruv Chavda 
-+1
+Grand Total = Subtotal + Tax
 
-🔮 Future Improvements
+🎓 Academic Relevance
 
-Persistence: Implementation of file handling to save data permanently.
-+1
+This project is ideal for:
 
+C++ Mini Project
 
-Guest Records: Tracking customer names, contact IDs, and booking history.
-+1
+OOP Concept Demonstration
 
+Practical Exams & Viva
 
-GUI: Developing a graphical user interface using modern frameworks.
+Beginner-level system design
+
+🚀 Possible Future Enhancements
+
+Store customer details
+
+File handling for permanent data storage
+
+Date-based booking system
+
+Admin and user login
+
+Graphical User Interface (GUI)
